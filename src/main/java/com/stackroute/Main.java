@@ -14,7 +14,7 @@ import org.springframework.core.io.ClassPathResource;
     public class Main {
 
         public static void main(String[] args) {
-            ClassPathResource resource = new ClassPathResource("beans.xml");
+       /*     ClassPathResource resource = new ClassPathResource("beans.xml");
             BeanFactory factory = new XmlBeanFactory(resource);
 
             Movie movie = (Movie) factory.getBean("movie");
@@ -32,14 +32,14 @@ import org.springframework.core.io.ClassPathResource;
             BeanDefinitionReader beanDefinitionReader=new XmlBeanDefinitionReader(beanDefinitionRegistry);
             beanDefinitionReader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
             Movie movie3=(Movie)((DefaultListableBeanFactory)beanDefinitionRegistry).getBean("movie1");
-            System.out.println("Actor information using application context:\n" +movie3);
+            System.out.println("Actor information using application context:\n" +movie3);     */
 
             //testing scope
 
             ApplicationContext applicationContext1=new ClassPathXmlApplicationContext("beans.xml");
-            Movie movie4=(Movie) applicationContext1.getBean("movie1");
+        /*    Movie movie4=(Movie) applicationContext1.getBean("movie1");
             Movie movie5=(Movie) applicationContext1.getBean("movie1");
-            System.out.println(movie4==movie5);
+            System.out.println(movie4==movie5);*/
 
          //using name instead of id in bean-
                     Movie movie6=(Movie) applicationContext1.getBean("MovieA");
