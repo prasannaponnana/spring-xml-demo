@@ -26,8 +26,21 @@
     <bean id="movie1" class="com.stackroute.domain.Movie"  scope="prototype">
         <constructor-arg name="actor" ref="actor1"/>
     </bean>-->
-    <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" autowi
+    <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" autowire="byName">
         <constructor-arg name="actor" ref="actor1"/>
+    </bean>
+
+<bean id="applicationContextAwareDemo" class="com.stackroute.awareinterface.ApplicationContextAwareDemo">
+
+</bean>
+    <bean id="beanFactoryAwareDemo" class="com.stackroute.awareinterface.BeanFactoryAwareDemo">
+
+    </bean>
+    <bean id="beanNAmeAwareDemo" class="com.stackroute.awareinterface.BeanNAmeAwareDemo">
+
+    </bean>
+    <bean id="resourcesLoaderAwareDemo" class="com.stackroute.awareinterface.ResourcesLoaderAwareDemo">
+
     </bean>
 
 

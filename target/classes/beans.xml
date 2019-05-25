@@ -6,10 +6,13 @@
 
   <!--  <bean id="actor" class="com.stackroute.domain.Actor">
         <property name="name" value="prasanna"/>
-        <property name="gender" value="female"/>
+        <property name="gender" value="female"/>re="byName">
+        <constructor-arg name="actor" ref="actor1"/>
+    </bean>
+    <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" autowire="byType">
         <property name="age" value="23"/>
     </bean>
--->
+    -->
     <bean id="actor1" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="pechu"/>
         <constructor-arg name="gender" value="female"/>
@@ -26,8 +29,18 @@
     <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" autowire="byName">
         <constructor-arg name="actor" ref="actor1"/>
     </bean>
-    <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" autowire="byType">
-        <constructor-arg name="actor" ref="actor1"/>
+
+<bean id="applicationContextAwareDemo" class="com.stackroute.awareinterface.ApplicationContextAwareDemo">
+
+</bean>
+    <bean id="beanFactoryAwareDemo" class="com.stackroute.awareinterface.BeanFactoryAwareDemo">
+
+    </bean>
+    <bean id="beanNAmeAwareDemo" class="com.stackroute.awareinterface.BeanNAmeAwareDemo">
+
+    </bean>
+    <bean id="resourcesLoaderAwareDemo" class="com.stackroute.awareinterface.ResourcesLoaderAwareDemo">
+
     </bean>
 
 
