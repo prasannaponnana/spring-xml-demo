@@ -42,6 +42,10 @@
     <bean id="resourcesLoaderAwareDemo" class="com.stackroute.awareinterface.ResourcesLoaderAwareDemo">
 
     </bean>
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean">
+        <property name="message" value=" BeanLifecycleDemoBean class "></property>
+
+    </bean>
 
 
 </beans>
